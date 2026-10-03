@@ -3,21 +3,934 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>caracakez | Official Store</title>
+
     <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
+        name="description"
+        content="The official website and store of caracakez."
     >
 
-    <title>Store</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/site.js" defer></script>
 </head>
 
 <body>
 
-    <h1>It works.</h1>
+    <!-- Accessibility -->
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-    <script src="js/site.js"></script>
+
+    <!-- =========================================================
+         ANNOUNCEMENT BAR
+    ========================================================== -->
+
+    <div class="announcement-bar">
+
+        <div class="announcement-bar__track">
+
+            <span>NEW DIGITAL DROPS</span>
+            <span aria-hidden="true">✦</span>
+
+            <span>ORIGINAL STL FILES</span>
+            <span aria-hidden="true">✦</span>
+
+            <span>INSTANT DOWNLOAD</span>
+            <span aria-hidden="true">✦</span>
+
+            <span>NEW DIGITAL DROPS</span>
+            <span aria-hidden="true">✦</span>
+
+            <span>ORIGINAL STL FILES</span>
+            <span aria-hidden="true">✦</span>
+
+            <span>INSTANT DOWNLOAD</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         HEADER / NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a
+                class="site-logo"
+                href="index.html"
+                aria-label="caracakez home"
+            >
+                CARACAKEZ
+            </a>
+
+
+            <nav
+                class="desktop-nav"
+                aria-label="Primary navigation"
+            >
+
+                <a
+                    class="nav-link is-active"
+                    href="index.html"
+                >
+                    Home
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="shop.html"
+                >
+                    Shop
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="about.html"
+                >
+                    About
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="contact.html"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="site-header__actions">
+
+                <a
+                    class="header-shop-link"
+                    href="shop.html"
+                >
+                    Shop
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <div
+            class="mobile-menu"
+            id="mobile-menu"
+            aria-hidden="true"
+        >
+
+            <nav aria-label="Mobile navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main id="main-content">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero">
+
+
+            <!-- Decorative background elements -->
+
+            <div
+                class="hero-orb hero-orb--one"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-orb hero-orb--two"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="hero__inner">
+
+
+                <!-- Hero Copy -->
+
+                <div class="hero__content">
+
+                    <p class="eyebrow">
+                        [TAGLINE]
+                    </p>
+
+
+                    <h1 class="hero__title">
+
+                        <span class="hero__title-line">
+                            CARA
+                        </span>
+
+                        <span class="hero__title-line hero__title-line--accent">
+                            CAKEZ.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero__description">
+                        [SMALL BIO]
+                    </p>
+
+
+                    <div class="hero__actions">
+
+                        <a
+                            class="button button--primary"
+                            href="shop.html"
+                        >
+                            Shop the collection
+
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </a>
+
+
+                        <a
+                            class="text-link"
+                            href="about.html"
+                        >
+                            About caracakez
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Visual -->
+
+                <div class="hero__visual">
+
+                    <div class="hero-card">
+
+                        <div class="hero-card__label">
+                            CARACAKEZ
+                        </div>
+
+
+                        <div
+                            class="hero-card__placeholder"
+                            aria-hidden="true"
+                        >
+                            <span>
+                                PICTURE OF
+                                <br>
+                                BUBBY
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating decorative cards -->
+
+                    <div
+                        class="floating-tag floating-tag--one"
+                        aria-hidden="true"
+                    >
+                        CARA
+                        <br>
+                        CAKEZ
+                    </div>
+
+
+                    <div
+                        class="floating-tag floating-tag--two"
+                        aria-hidden="true"
+                    >
+                        [TEXT]
+                    </div>
+
+
+                    <div
+                        class="hero-star hero-star--one"
+                        aria-hidden="true"
+                    >
+                        ✦
+                    </div>
+
+
+                    <div
+                        class="hero-star hero-star--two"
+                        aria-hidden="true"
+                    >
+                        ✦
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a
+                class="hero-scroll"
+                href="#featured"
+                aria-label="Scroll to featured products"
+            >
+                <span>SCROLL</span>
+                <span aria-hidden="true">↓</span>
+            </a>
+
+        </section>
+
+
+        <!-- =====================================================
+             FEATURED PRODUCTS
+        ====================================================== -->
+
+        <section
+            class="section featured-section"
+            id="featured"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Featured
+                        </p>
+
+                        <h2>
+                            Featured drops.
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        class="text-link text-link--arrow"
+                        href="shop.html"
+                    >
+                        View all products
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+
+                </div>
+
+
+                <div class="product-grid">
+
+
+                    <!-- Product 01 -->
+
+                    <article class="product-card">
+
+                        <a
+                            class="product-card__image-link"
+                            href="shop.html"
+                            aria-label="View Product One"
+                        >
+
+                            <div class="product-card__media">
+
+                                <div
+                                    class="product-placeholder"
+                                    aria-hidden="true"
+                                >
+                                    PRODUCT
+                                    <br>
+                                    IMAGE
+                                </div>
+
+
+                                <span class="product-card__badge">
+                                    NEW
+                                </span>
+
+                            </div>
+
+                        </a>
+
+
+                        <div class="product-card__info">
+
+                            <div>
+
+                                <p class="product-card__category">
+                                    STL FILE
+                                </p>
+
+                                <h3>
+                                    <a href="shop.html">
+                                        [PRODUCT NAME]
+                                    </a>
+                                </h3>
+
+                            </div>
+
+
+                            <p class="product-card__price">
+                                $XX.XX
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 02 -->
+
+                    <article class="product-card">
+
+                        <a
+                            class="product-card__image-link"
+                            href="shop.html"
+                            aria-label="View Product Two"
+                        >
+
+                            <div class="product-card__media">
+
+                                <div
+                                    class="product-placeholder"
+                                    aria-hidden="true"
+                                >
+                                    PRODUCT
+                                    <br>
+                                    IMAGE
+                                </div>
+
+                            </div>
+
+                        </a>
+
+
+                        <div class="product-card__info">
+
+                            <div>
+
+                                <p class="product-card__category">
+                                    STL FILE
+                                </p>
+
+                                <h3>
+                                    <a href="shop.html">
+                                        [PRODUCT NAME]
+                                    </a>
+                                </h3>
+
+                            </div>
+
+
+                            <p class="product-card__price">
+                                $XX.XX
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 03 -->
+
+                    <article class="product-card">
+
+                        <a
+                            class="product-card__image-link"
+                            href="shop.html"
+                            aria-label="View Product Three"
+                        >
+
+                            <div class="product-card__media">
+
+                                <div
+                                    class="product-placeholder"
+                                    aria-hidden="true"
+                                >
+                                    PRODUCT
+                                    <br>
+                                    IMAGE
+                                </div>
+
+                            </div>
+
+                        </a>
+
+
+                        <div class="product-card__info">
+
+                            <div>
+
+                                <p class="product-card__category">
+                                    STL FILE
+                                </p>
+
+                                <h3>
+                                    <a href="shop.html">
+                                        [PRODUCT NAME]
+                                    </a>
+                                </h3>
+
+                            </div>
+
+
+                            <p class="product-card__price">
+                                $XX.XX
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BRAND STATEMENT
+        ====================================================== -->
+
+        <section class="brand-statement">
+
+
+            <div
+                class="brand-statement__marquee"
+                aria-hidden="true"
+            >
+
+                <div class="brand-statement__track">
+
+                    <span>CARACAKEZ</span>
+                    <span>✦</span>
+
+                    <span>CARACAKEZ</span>
+                    <span>✦</span>
+
+                    <span>CARACAKEZ</span>
+                    <span>✦</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="brand-statement__inner">
+
+                <p class="eyebrow">
+                    [SECTION LABEL]
+                </p>
+
+                <p class="brand-statement__copy">
+                    [BRAND STATEMENT]
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT TEASER
+        ====================================================== -->
+
+        <section class="section creator-section">
+
+            <div class="section-container creator-section__grid">
+
+
+                <!-- Creator visual -->
+
+                <div class="creator-section__visual">
+
+                    <div class="creator-image-placeholder">
+
+                        <span>
+                            PICTURE OF
+                            <br>
+                            BUBBY
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Creator copy -->
+
+                <div class="creator-section__content">
+
+                    <p class="eyebrow">
+                        About
+                    </p>
+
+
+                    <h1>
+                        caracakez
+                    </h1>
+
+
+                    <div class="creator-section__intro">
+                        [BIO]
+                    </div>
+
+
+                    <a
+                        class="button button--secondary"
+                        href="about.html"
+                    >
+                        More about caracakez
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SOCIAL METRICS
+        ====================================================== -->
+
+        <section class="metrics-section">
+
+            <div class="section-container">
+
+
+                <div class="metrics-section__heading">
+
+                    <p class="eyebrow">
+                        Across the internet
+                    </p>
+
+                    <h2>
+                        caracakez online.
+                    </h2>
+
+                </div>
+
+
+                <div class="metrics-grid">
+
+
+                    <div class="metric">
+
+                        <p class="metric__value">
+                            [—]
+                        </p>
+
+                        <p class="metric__label">
+                            TikTok
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <p class="metric__value">
+                            [—]
+                        </p>
+
+                        <p class="metric__label">
+                            YouTube
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <p class="metric__value">
+                            [—]
+                        </p>
+
+                        <p class="metric__label">
+                            Instagram
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <p class="metric__value">
+                            [—]
+                        </p>
+
+                        <p class="metric__label">
+                            Twitch
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="metrics-section__note">
+                    I'll add the live metrics later.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="final-cta">
+
+            <div class="final-cta__inner">
+
+
+                <div
+                    class="final-cta__star"
+                    aria-hidden="true"
+                >
+                    ✦
+                </div>
+
+
+                <p class="eyebrow">
+                    [CTA LABEL]
+                </p>
+
+
+                <h2>
+                    [CTA]
+                </h2>
+
+
+                <a
+                    class="button button--dark"
+                    href="shop.html"
+                >
+                    Enter the shop
+
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="site-footer__top">
+
+
+            <div class="site-footer__brand">
+
+                <a
+                    class="site-footer__logo"
+                    href="index.html"
+                >
+                    CARACAKEZ
+                </a>
+
+                <p>
+                    [FOOTER TEXT]
+                </p>
+
+            </div>
+
+
+            <div class="site-footer__nav">
+
+
+                <div>
+
+                    <p class="footer-heading">
+                        Explore
+                    </p>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="shop.html">
+                        Shop
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <p class="footer-heading">
+                        Follow
+                    </p>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        YouTube
+                    </a>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        TikTok
+                    </a>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Twitch
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <p class="footer-heading">
+                        Legal
+                    </p>
+
+                    <a href="legal/terms.html">
+                        Terms
+                    </a>
+
+                    <a href="legal/privacy.html">
+                        Privacy
+                    </a>
+
+                    <a href="legal/refund-policy.html">
+                        Refund Policy
+                    </a>
+
+                    <a href="legal/license.html">
+                        Digital License
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            <p>
+                © <span id="current-year">2026</span>
+                caracakez
+            </p>
+
+            <p>
+                [FOOTER NOTE]
+            </p>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
