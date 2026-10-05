@@ -448,3 +448,187 @@ updateMenuPosition();
     );
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const carousel =
+        document.querySelector(
+            ".featured-carousel"
+        );
+
+    const track =
+        carousel?.querySelector(
+            ".product-grid"
+        );
+
+    const prevButton =
+        document.querySelector(
+            ".featured-carousel__button--prev"
+        );
+
+    const nextButton =
+        document.querySelector(
+            ".featured-carousel__button--next"
+        );
+
+
+    if (
+        !carousel ||
+        !track ||
+        !prevButton ||
+        !nextButton
+    ) {
+        return;
+    }
+
+
+    const cards =
+        Array.from(
+            track.querySelectorAll(
+                ".product-card"
+            )
+        );
+
+
+    let currentIndex = 0;
+
+
+    function getVisibleCount() {
+
+        if (window.innerWidth <= 900) {
+            return cards.length;
+        }
+
+        return 4;
+
+    }
+
+
+    function updateCarousel() {
+
+        if (window.innerWidth <= 900) {
+
+            currentIndex = 0;
+
+            track.style.transform =
+                "translateX(0)";
+
+            return;
+
+        }
+
+
+        const firstCard =
+            cards[0];
+
+
+        if (!firstCard) {
+            return;
+        }
+
+
+        const trackStyles =
+            window.getComputedStyle(track);
+
+
+        const gap =
+            parseFloat(
+                trackStyles.columnGap
+            ) || 0;
+
+
+        const cardWidth =
+            firstCard
+                .getBoundingClientRect()
+                .width;
+
+
+        const distance =
+            currentIndex *
+            (cardWidth + gap);
+
+
+        track.style.transform =
+            `translateX(-${distance}px)`;
+
+    }
+
+
+    nextButton.addEventListener(
+        "click",
+        () => {
+
+            const visibleCount =
+                getVisibleCount();
+
+            const maxIndex =
+                Math.max(
+                    0,
+                    cards.length -
+                    visibleCount
+                );
+
+
+            if (currentIndex >= maxIndex) {
+
+                currentIndex = 0;
+
+            }
+
+            else {
+
+                currentIndex += 1;
+
+            }
+
+
+            updateCarousel();
+
+        }
+    );
+
+
+    prevButton.addEventListener(
+        "click",
+        () => {
+
+            const visibleCount =
+                getVisibleCount();
+
+            const maxIndex =
+                Math.max(
+                    0,
+                    cards.length -
+                    visibleCount
+                );
+
+
+            if (currentIndex <= 0) {
+
+                currentIndex =
+                    maxIndex;
+
+            }
+
+            else {
+
+                currentIndex -= 1;
+
+            }
+
+
+            updateCarousel();
+
+        }
+    );
+
+
+    window.addEventListener(
+        "resize",
+        updateCarousel
+    );
+
+
+    updateCarousel();
+
+});

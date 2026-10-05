@@ -348,19 +348,9 @@
                         </div>
 
 
-                        <div
-                            class="hero-card__placeholder"
-                            aria-hidden="true"
-                        >
-                            <span>
-                                PICTURE OF
-                                <br>
-                                caracakez
-                            </span>
+                        <div class="hero-card__placeholder">
+                            <img src="assets/images/caracakez-heroimage.jpg" alt="caracakez">
                         </div>
-
-                    </div>
-
 
                     <!-- Floating decorative cards -->
 
@@ -378,7 +368,7 @@
                         class="floating-tag floating-tag--two"
                         aria-hidden="true"
                     >
-                        [TEXT]
+                        THE GOAT
                     </div>
 
 
@@ -441,6 +431,8 @@
                     </div>
 
 
+                    <div class="featured-section__actions">
+
                     <a
                         class="text-link text-link--arrow"
                         href="shop.html"
@@ -452,10 +444,38 @@
                         </span>
                     </a>
 
+
+                    <div
+                        class="featured-carousel__controls"
+                        aria-label="Featured product controls"
+                    >
+
+                        <button
+                            class="featured-carousel__button featured-carousel__button--prev"
+                            type="button"
+                            aria-label="Previous featured products"
+                        >
+                            ←
+                        </button>
+
+                        <button
+                            class="featured-carousel__button featured-carousel__button--next"
+                            type="button"
+                            aria-label="Next featured products"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </div>
+
                 </div>
 
 
-                <div class="product-grid">
+                <div class="featured-carousel">
+
+                    <div class="product-grid">
 
 
                     <!-- Product 01 -->
@@ -669,7 +689,8 @@
 
                     </article>
 
-
+                    </div>
+                    
                 </div>
 
             </div>
@@ -729,17 +750,9 @@
 
                 <!-- Creator visual -->
 
-                <div class="creator-section__visual">
+                <div class="about-photo-placeholder">
 
-                    <div class="creator-image-placeholder">
-
-                        <span>
-                            PICTURE OF
-                            <br>
-                            caracakez
-                        </span>
-
-                    </div>
+                    <img src="assets/images/caracakez-about.jpg" alt="caracakez">
 
                 </div>
 
@@ -782,7 +795,7 @@
 
 
         <!-- =====================================================
-             SOCIAL METRICS
+        SOCIAL METRICS
         ====================================================== -->
 
         <section class="metrics-section">
@@ -792,13 +805,31 @@
 
                 <div class="metrics-section__heading">
 
-                    <p class="eyebrow">
-                        Across the internet
-                    </p>
+                    <div>
 
-                    <h2>
-                        caracakez online.
-                    </h2>
+                        <p class="eyebrow">
+                            The numbers
+                        </p>
+
+                        <h2>
+                            Across the internet.
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        class="text-link"
+                        href="https://beacons.ai/caracakez/mediakit?origin=lib"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View live media kit
+
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </a>
 
                 </div>
 
@@ -806,64 +837,103 @@
                 <div class="metrics-grid">
 
 
-                    <div class="metric">
+                    <article class="metric">
 
-                        <p class="metric__value">
-                            [—]
-                        </p>
-
-                        <p class="metric__label">
-                            TikTok
-                        </p>
-
-                    </div>
-
-
-                    <div class="metric">
-
-                        <p class="metric__value">
-                            [—]
-                        </p>
-
-                        <p class="metric__label">
-                            YouTube
-                        </p>
-
-                    </div>
-
-
-                    <div class="metric">
-
-                        <p class="metric__value">
-                            [—]
-                        </p>
-
-                        <p class="metric__label">
+                        <p class="metric__platform">
                             Instagram
                         </p>
 
-                    </div>
+                        <div>
+
+                            <p
+                                class="metric__value"
+                                data-social-stat="instagram"
+                            >
+                                48K+
+                            </p>
+
+                            <p class="metric__detail">
+                                Followers
+                            </p>
+
+                        </div>
+
+                    </article>
 
 
-                    <div class="metric">
+                    <article class="metric">
 
-                        <p class="metric__value">
-                            [—]
+                        <p class="metric__platform">
+                            TikTok
                         </p>
 
-                        <p class="metric__label">
+                        <div>
+
+                            <p
+                                class="metric__value"
+                                data-social-stat="tiktok"
+                            >
+                                17K+
+                            </p>
+
+                            <p class="metric__detail">
+                                Followers
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="metric">
+
+                        <p class="metric__platform">
+                            YouTube
+                        </p>
+
+                        <div>
+
+                            <p
+                                class="metric__value"
+                                data-social-stat="youtube"
+                            >
+                                1.1M+
+                            </p>
+
+                            <p class="metric__detail">
+                                Accumulated views
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="metric">
+
+                        <p class="metric__platform">
                             Twitch
                         </p>
 
-                    </div>
+                        <div>
+
+                            <p
+                                class="metric__value"
+                                data-social-stat="twitch"
+                            >
+                                4K+
+                            </p>
+
+                            <p class="metric__detail">
+                                Followers
+                            </p>
+
+                        </div>
+
+                    </article>
 
 
                 </div>
-
-
-                <p class="metrics-section__note">
-                    I'll add the live metrics later.
-                </p>
 
             </div>
 
@@ -888,13 +958,13 @@
 
 
                 <p class="eyebrow">
-                    [CTA LABEL]
+                    Like my work? Support me!
                 </p>
 
 
-                <h2>
-                    [CTA]
-                </h2>
+                <h1>
+                    STL's for all my creations are available in the shop.
+                </h1>
 
 
                 <a
@@ -935,7 +1005,7 @@
                 </a>
 
                 <p>
-                    [FOOTER TEXT]
+                    Subscribe to my newsletter for updates on new drops and exclusive content.
                 </p>
 
             </div>
@@ -1048,7 +1118,7 @@
             </p>
 
             <p>
-                [FOOTER NOTE]
+                © All rights reserved.
             </p>
 
         </div>
