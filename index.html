@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+
     <script src="js/site.js" defer></script>
+
 </head>
 
 <body class="home-page">
@@ -416,7 +421,7 @@
             <div class="section-container">
 
 
-                <div class="section-heading">
+                <div class="section-heading" data-reveal>
 
                     <div>
 
@@ -475,12 +480,12 @@
 
                 <div class="featured-carousel">
 
-                    <div class="product-grid">
+                    <div class="product-grid" data-reveal-group>
 
 
                     <!-- Product 01 -->
 
-                    <article class="product-card">
+                    <article class="product-card" data-reveal-item>
 
                         <a
                             class="product-card__image-link"
@@ -537,7 +542,7 @@
 
                     <!-- Product 02 -->
 
-                    <article class="product-card">
+                    <article class="product-card" data-reveal-item>
 
                         <a
                             class="product-card__image-link"
@@ -589,7 +594,7 @@
 
                     <!-- Product 03 -->
 
-                    <article class="product-card">
+                    <article class="product-card" data-reveal-item>
 
                         <a
                             class="product-card__image-link"
@@ -640,7 +645,7 @@
 
                     <!-- Product 04 -->
 
-                    <article class="product-card">
+                    <article class="product-card" data-reveal-item>
 
                         <a
                             class="product-card__image-link"
@@ -798,12 +803,26 @@
         SOCIAL METRICS
         ====================================================== -->
 
-        <section class="metrics-section">
+        <section class="metrics-section has-ambient-stars">
+
+            <span
+                class="ambient-star ambient-star--large ambient-star--one"
+                aria-hidden="true"
+            >
+                ✦
+            </span>
+
+            <span
+                class="ambient-star ambient-star--small ambient-star--two"
+                aria-hidden="true"
+            >
+                ✦
+            </span>
 
             <div class="section-container">
 
 
-                <div class="metrics-section__heading">
+                <div class="metrics-section__heading" data-reveal>
 
                     <div>
 
@@ -834,10 +853,10 @@
                 </div>
 
 
-                <div class="metrics-grid">
+                <div class="metrics-grid" data-reveal-group>
 
 
-                    <article class="metric">
+                    <article class="metric" data-reveal-item>
 
                         <p class="metric__platform">
                             Instagram
@@ -861,7 +880,7 @@
                     </article>
 
 
-                    <article class="metric">
+                    <article class="metric" data-reveal-item>
 
                         <p class="metric__platform">
                             TikTok
@@ -885,7 +904,7 @@
                     </article>
 
 
-                    <article class="metric">
+                    <article class="metric" data-reveal-item>
 
                         <p class="metric__platform">
                             YouTube
@@ -909,7 +928,7 @@
                     </article>
 
 
-                    <article class="metric">
+                    <article class="metric" data-reveal-item>
 
                         <p class="metric__platform">
                             Twitch
@@ -944,7 +963,14 @@
              FINAL CTA
         ====================================================== -->
 
-        <section class="final-cta">
+        <section class="final-cta has-ambient-stars">
+
+            <span
+                class="ambient-star ambient-star--medium ambient-star--three"
+                aria-hidden="true"
+            >
+                ✦
+            </span>
 
             <div class="final-cta__inner">
 

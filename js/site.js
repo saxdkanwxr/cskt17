@@ -632,3 +632,164 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCarousel();
 
 });
+
+/* =========================================================
+   GSAP SCROLL REVEALS
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (
+        typeof gsap === "undefined" ||
+        typeof ScrollTrigger === "undefined"
+    ) {
+        return;
+    }
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    /*
+     * Respect the user's reduced-motion setting.
+     */
+
+    const reduceMotion =
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+
+    if (reduceMotion) {
+        return;
+    }
+
+
+    /*
+     * Individual reveal elements.
+     */
+
+    const revealElements =
+        document.querySelectorAll(
+            "[data-reveal]"
+        );
+
+
+    revealElements.forEach((element) => {
+
+        gsap.from(element, {
+
+            y: 28,
+
+            opacity: 0,
+
+            duration: 0.85,
+
+            ease: "power3.out",
+
+            scrollTrigger: {
+
+                trigger: element,
+
+                start: "top 88%",
+
+                once: true
+
+            }
+
+        });
+
+    });
+
+
+    /*
+     * Staggered reveal groups.
+     */
+
+    const revealGroups =
+        document.querySelectorAll(
+            "[data-reveal-group]"
+        );
+
+
+    revealGroups.forEach((group) => {
+
+        const items =
+            group.querySelectorAll(
+                "[data-reveal-item]"
+            );
+
+
+        if (!items.length) {
+            return;
+        }
+
+
+        gsap.from(items, {
+
+            y: 24,
+
+            opacity: 0,
+
+            duration: 0.75,
+
+            stagger: 0.1,
+
+            ease: "power3.out",
+
+            scrollTrigger: {
+
+                trigger: group,
+
+                start: "top 84%",
+
+                once: true
+
+            }
+
+        });
+
+    });
+    
+    /*
+ * Ambient star drift.
+ */
+
+const ambientStars =
+    document.querySelectorAll(
+        ".ambient-star"
+    );
+
+
+ambientStars.forEach(
+    (star, index) => {
+
+        const direction =
+            index % 2 === 0
+                ? 1
+                : -1;
+
+
+        gsap.to(star, {
+
+            y: 14 * direction,
+
+            x: 5 * direction,
+
+            rotation: 8 * direction,
+
+            duration:
+                4 + (index % 3),
+
+            ease: "sine.inOut",
+
+            repeat: -1,
+
+            yoyo: true
+
+        });
+
+    }
+);
+
+});

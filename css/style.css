@@ -1437,6 +1437,69 @@ h2 {
     }
 }
 
+/* =========================================================
+   AMBIENT STARS
+========================================================= */
+
+.has-ambient-stars {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.ambient-star {
+    position: absolute;
+
+    z-index: 0;
+
+    color: var(--pink-deep);
+
+    opacity: 0.14;
+
+    line-height: 1;
+
+    pointer-events: none;
+
+    user-select: none;
+}
+
+.ambient-star--small {
+    font-size: 1.25rem;
+}
+
+.ambient-star--medium {
+    font-size: 2rem;
+}
+
+.ambient-star--large {
+    font-size: 3.2rem;
+}
+
+
+/* Keep actual section content above them */
+
+.has-ambient-stars
+> :not(.ambient-star) {
+    position: relative;
+
+    z-index: 1;
+}
+
+.ambient-star--one {
+    top: 14%;
+    right: 6%;
+}
+
+.ambient-star--two {
+    left: 4%;
+    bottom: 12%;
+}
+
+.ambient-star--three {
+    top: 22%;
+    right: 12%;
+}
+
 /*=========================================================
    RESPONSIVE
 =========================================================*/
@@ -1806,6 +1869,10 @@ h2 {
 
     .announcement-bar__track {
         animation: none;
+    }
+
+    .ambient-star {
+        transform: none !important;
     }
 
     *,
